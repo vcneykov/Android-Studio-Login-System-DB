@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtRePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:text="Register"
+        app:layout_constraintStart_toStartOf="@+id/checkAgree"
+        app:layout_constraintTop_toBottomOf="@+id/checkAgree" />
+
+    <Button
+        android:id="@+id/continueToLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Goto Login"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="@+id/checkAgree"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnRegister" />
+
+    <TextView
+        android:id="@+id/txtWarnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invalid Username"
+        app:layout_constraintBottom_toTopOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/txtWarnEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invalid Email"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail" />
+
+    <TextView
+        android:id="@+id/txtWarnPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invalid Password"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword" />
+
+    <TextView
+        android:id="@+id/txtWarnRePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passoword does not match"
+        app:layout_constraintBottom_toTopOf="@+id/txtRePassword"
+        app:layout_constraintStart_toStartOf="@+id/txtRePassword" />
+
+    <CheckBox
+        android:id="@+id/checkAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Agreement with the terms of use"
+        app:layout_constraintEnd_toEndOf="@+id/txtRePassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtRePassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtRePassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
